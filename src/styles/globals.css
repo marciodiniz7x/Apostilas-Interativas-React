@@ -17,42 +17,20 @@
 }
 
 body {
-  background-color: rgb(170, 170, 170);
+
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(../img/bg01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 .interface {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 1200px;
-  background-color: white;
-}
-
-.header {
-  border: 1px solid;
-  width: 1200px;
-  height: 100px;
-}
-
-.banner {
-  border: 1px solid;
-  width: 1200px;
-  height: 300px;
-}
-.main {
-  border: 1px solid;
   width: 1200px;
   height: 500px;
   background-color: #f3f3f3;
 }
 
-.footer {
-  border: 1px solid;
-  width: 1200px;
-  height: 100px;
-}
+
+
