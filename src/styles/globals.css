@@ -21,7 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/bg01.jpg);
+  background-image: url(/images/bg01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -34,7 +34,7 @@ body {
 }
 
 .right {
-  background-image: url(../img/study.png);
+  background-image: url(/images/study.png);
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
