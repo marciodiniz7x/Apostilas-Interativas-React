@@ -1,31 +1,9 @@
-import { useRouter } from "next/router"
+import React from "react"
+import { useNavigation } from "../comunicacao/Navigation"
 
 export default function Header() {
 
-    const router = useRouter();
-
-    const toHome = () => {
-        router.push('interface');
-    }
-
-    const toQuestoes = () => {
-        router.push('questoes-interativas')
-    }
-
-    const toDisciplinas = () => {
-        router.push('disciplinas');
-    }
-
-    // const redirectPage = (page) => {
-    //     switch (page) {
-    //         case "home":
-    //             window.location.href = "basicos/interface";
-    //             break;
-        
-    //         default:
-    //             break;
-    //     }
-    // }
+    const { toHome, toQuestoes, toDisciplinas } = useNavigation()
 
     return (
         <div className="flex justify-around items-center w-[1200px] h-[100px] bg-white">
