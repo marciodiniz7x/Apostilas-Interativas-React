@@ -37,7 +37,7 @@ export default function Header() {
                     <button className="cursor-pointer hover:text-[#f79618] duration-300">Disciplinas</button>
                     <button className="cursor-pointer hover:text-[#f79618] duration-300" onClick={toQuestoes}>Exercícios</button>
                     <button className="cursor-pointer hover:text-[#f79618] duration-300">Sobre</button>
-                    <button className="cursor-pointer bg-[#f79618] px-7 py-1 rounded-2xl text-white hover:bg-slate-700 duration-700">LOGIN</button>
+                    <button className="cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium hover:bg-[#f7aac0] duration-700">LOGIN</button>
                 </div>
 
         </div>
