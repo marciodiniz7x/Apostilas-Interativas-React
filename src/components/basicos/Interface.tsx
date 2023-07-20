@@ -1,11 +1,7 @@
 import React from "react";
 
 export default function Interface() {
-
-    
-    return (
-        
+    return (      
         <div className="interface"></div>
-        
     )
 }
