@@ -8,19 +8,21 @@ export const useNavigation = () => {
 
     const router = useRouter();
 
+    const navigateAndActive = (page: any) => {
+      router.push(page);
+      setActiveSection(page);
+    }
+
     const toHome = () => {
-      router.push('home');
-      setActiveSection('home');
+      navigateAndActive('home');
     }
   
     const toQuestoes = () => {
-      router.push('questoes-interativas');
-      setActiveSection('questoes-interativas')
+      navigateAndActive('questoes-interativas')
     }
   
     const toDisciplinas = () => {
-      router.push('disciplinas');
-      setActiveSection('disciplinas');
+      navigateAndActive('disciplinas');
     }
 
     return {
