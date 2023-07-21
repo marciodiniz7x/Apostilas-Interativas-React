@@ -1,7 +1,7 @@
 import Banner from "@/components/basicos/Banner";
 import Footer from "@/components/basicos/Footer";
 import Header from "@/components/basicos/Header";
-import Interface from "@/components/basicos/Interface";
+import Interface from "@/components/basicos/Home";
 import { useEffect } from "react";
 
 

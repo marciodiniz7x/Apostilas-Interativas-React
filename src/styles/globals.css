@@ -40,9 +40,13 @@ body {
   background-repeat: no-repeat;
 }
 
-.onPage {
-  font-weight: bolder;
-  color: #292f3f;
+button {
+  font-weight: 500;
+}
+
+button.active {
+  font-weight: 500;
+  color: #FD5875;
 }
 
 
