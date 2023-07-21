@@ -3,13 +3,14 @@ import React, { useState } from "react";
 
 export const useNavigation = () => {
 
-    const [activeSection, setActiveSection] = useState('home');
+
+    const [activeSection, setActiveSection] = useState('');
 
     const router = useRouter();
 
     const toHome = () => {
       router.push('home');
-      setActiveSection('Home');
+      setActiveSection('home');
     }
   
     const toQuestoes = () => {
