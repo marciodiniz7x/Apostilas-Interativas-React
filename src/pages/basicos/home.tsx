@@ -3,16 +3,19 @@ import Footer from "@/components/basicos/Footer";
 import Header from "@/components/basicos/Header";
 import Interface from "@/components/basicos/Home";
 import { useEffect } from "react";
+import { useNavigation } from "@/components/comunicacao/Navigation";
 
 
 export default function interfacehome() {
 
+    
+
     useEffect(() => {
-        document.title = "Início | React Apostilas";
+        document.title = "Início | ReactApostilas";
     }, []);
 
     return (
-        <div className="flex flex-col justify-center align-middle">
+        <div>
             <Header />
             <Banner />
             <Interface />

@@ -5,7 +5,7 @@ export default function Home() {
 
   const router = useRouter();
   useEffect(() => {
-    router.push('/basicos/interface');
+    router.push('/basicos/home');
   });
 
   return (

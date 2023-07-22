@@ -3,7 +3,7 @@ import { useNavigation } from "../comunicacao/Navigation";
 
 export default function Header() {
 
-    const { toHome, toQuestoes, toDisciplinas, activeSection } = useNavigation()
+    const { toHome, toQuestoes, toDisciplinas, toSobre, activeSection } = useNavigation();
 
     return (
         <div className="flex justify-around items-center w-[1200px] h-[100px] bg-white">
@@ -30,7 +30,7 @@ export default function Header() {
                     cursor-pointer hover:text-[#FD5875] duration-300 ${activeSection === 'questoes-interativas' ? 'active' : ''}
                     `} onClick={toQuestoes}>Exercícios</button>
 
-                    <button className="cursor-pointer hover:text-[#FD5875] duration-300">Sobre</button>
+                    <button className="cursor-pointer hover:text-[#FD5875] duration-300" onClick={toSobre}>Sobre</button>
 
                     <button className="cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium hover:bg-[#f7aac0] duration-700">LOGIN</button>
 

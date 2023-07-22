@@ -1,12 +1,15 @@
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export const useNavigation = () => {
-
-
+  
     const [activeSection, setActiveSection] = useState('');
 
     const router = useRouter();
+
+    useEffect(() => {
+      setActiveSection(router.pathname);
+    }, [router.pathname] );
 
     const navigateAndActive = (page: any) => {
       router.push(page);
@@ -25,10 +28,16 @@ export const useNavigation = () => {
       navigateAndActive('disciplinas');
     }
 
+    const toSobre = () => {
+      navigateAndActive('sobre');
+
+    }
+
     return {
         toHome,
         toQuestoes,
         toDisciplinas,
+        toSobre,
         activeSection
     }
 }

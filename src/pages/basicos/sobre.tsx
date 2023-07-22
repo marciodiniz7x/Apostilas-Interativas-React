@@ -1,20 +1,19 @@
 import Footer from "@/components/basicos/Footer";
 import Header from "@/components/basicos/Header";
-import Disciplinas from "@/components/basicos/Disciplinas";
+import Sobre from "@/components/basicos/Sobre";
 import { useEffect } from "react";
 
-export default function pageDisciplinas() {
+export default function pageSobre() {
 
     useEffect(() => {
-        document.title = "Disciplinas | ReactApostilas";
-    }, []);
+        document.title = 'Sobre | ReactApostilas'
+    })
 
     return (
         <div>
             <Header />
-            <Disciplinas />
+            <Sobre />
             <Footer />
-
         </div>
     )
 }
