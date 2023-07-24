@@ -1,9 +1,11 @@
+import { useRouter } from "next/router";
 import React from "react";
-import { useNavigation } from "../comunicacao/Navigation";
 
 export default function() {
 
-    const { toDisciplinas } = useNavigation();
+    const router = useRouter();
+    const toDisciplinas = () => router.push('disciplinas');
+    
 
     return (
         <div className="flex w-[1200px] h-[500px]">
