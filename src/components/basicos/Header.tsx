@@ -1,26 +1,38 @@
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Header() {
 
-    const [activeSection, setActiveSection] = useState('Home');
+    const [activeSection, setActiveSection] = useState('home');
 
     const router = useRouter();
 
+    useEffect(() => {
+        setActiveSection(router.pathname);
+    }, [router.pathname]);
+
     const toHome = () => {
         router.push('home');
+        setActiveSection('home');
     }
 
     const toDisciplinas = () => {
         router.push('disciplinas');
+        setActiveSection('disciplinas');
     }
 
     const toQuestoes = () => {
         router.push('questoes-interativas');
+        setActiveSection('questoes-interativas');
     }
 
     const toSobre = () => {
         router.push('sobre');
+        setActiveSection('sobre');
+    }
+
+    const toLogin = () => {
+        router.push('login');
     }
 
     return (
@@ -55,11 +67,12 @@ export default function Header() {
                     </li>
 
                     <li>
-                        <button className="cursor-pointer hover:text-[#FD5875] duration-300" onClick={toSobre}>Sobre</button>
+                        <button className={`cursor-pointer hover:text-[#FD5875] duration-300 
+                        ${activeSection === 'sobre' ? 'active' : ''}`} onClick={toSobre}>Sobre</button>
                     </li>
 
                     <li>
-                        <button className="cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium hover:bg-[#f7aac0] duration-700">LOGIN</button>
+                        <button className="cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium hover:bg-[#f7aac0] duration-700" onClick={toLogin}>LOGIN</button>
                     </li>
 
                 </ul>
