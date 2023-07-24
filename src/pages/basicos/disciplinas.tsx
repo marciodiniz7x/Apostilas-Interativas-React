@@ -7,6 +7,7 @@ export default function pageDisciplinas() {
 
     useEffect(() => {
         document.title = "Disciplinas | ReactApostilas";
+        
     }, []);
 
     return (

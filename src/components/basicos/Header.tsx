@@ -5,6 +5,7 @@ export default function Header() {
 
     const { toHome, toQuestoes, toDisciplinas, toSobre, activeSection } = useNavigation();
 
+
     return (
         <div className="flex justify-around items-center w-[1200px] h-[100px] bg-white">
 
@@ -14,27 +15,37 @@ export default function Header() {
                     <span className="text-slate-700 font-regular">Apostilas</span>
                 </div>
 
-                <div className="flex items-center justify-between gap-9 text-slate-700" >
+                <ul className="flex items-center justify-between gap-9 text-slate-700" >
 
-                    <button 
-                    className={`
-                    cursor-pointer hover:text-[#FD5875] duration-300
-                    ${activeSection === 'home' ? 'active' : ''}
-                    `} onClick={toHome}>Home</button>
+                    <li>
+                        <button 
+                        className={`
+                        cursor-pointer hover:text-[#FD5875] duration-300
+                        ${activeSection === 'home' ? 'active' : ''}
+                        `} onClick={toHome}>Home</button>
+                    </li>
 
-                    <button className={`
-                    cursor-pointer hover:text-[#FD5875] duration-300 ${activeSection === 'disciplinas' ? 'active' : ''}
-                    `} onClick={toDisciplinas}>Disciplinas</button>
+                    <li>
+                        <button className={`
+                        cursor-pointer hover:text-[#FD5875] duration-300 ${activeSection === 'disciplinas' ? 'active' : ''}
+                        `} onClick={toDisciplinas}>Disciplinas</button>
+                    </li>
 
-                    <button className={`
-                    cursor-pointer hover:text-[#FD5875] duration-300 ${activeSection === 'questoes-interativas' ? 'active' : ''}
-                    `} onClick={toQuestoes}>Exercícios</button>
+                    <li>
+                        <button className={`
+                        cursor-pointer hover:text-[#FD5875] duration-300 ${activeSection === 'questoes-interativas' ? 'active' : ''}
+                        `} onClick={toQuestoes}>Exercícios</button>
+                    </li>
 
-                    <button className="cursor-pointer hover:text-[#FD5875] duration-300" onClick={toSobre}>Sobre</button>
+                    <li>
+                        <button className="cursor-pointer hover:text-[#FD5875] duration-300" onClick={toSobre}>Sobre</button>
+                    </li>
 
-                    <button className="cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium hover:bg-[#f7aac0] duration-700">LOGIN</button>
+                    <li>
+                        <button className="cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium hover:bg-[#f7aac0] duration-700">LOGIN</button>
+                    </li>
 
-                </div>
+                </ul>
 
         </div>
     )
