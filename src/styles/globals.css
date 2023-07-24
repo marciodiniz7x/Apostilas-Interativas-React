@@ -27,6 +27,13 @@ body {
   background-position: center;
   color: #000;
 }
+
+h1 {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+}
+
 .interface {
   width: 1200px;
   height: 500px;

@@ -21,7 +21,8 @@ export const useNavigation = () => {
     }
   
     const toQuestoes = () => {
-      navigateAndActive('questoes-interativas')
+      navigateAndActive('questoes-interativas');
+     
     }
   
     const toDisciplinas = () => {

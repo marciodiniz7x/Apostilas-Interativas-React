@@ -1,10 +1,27 @@
-import React from "react";
-import { useNavigation } from "../comunicacao/Navigation";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function Header() {
 
-    const { toHome, toQuestoes, toDisciplinas, toSobre, activeSection } = useNavigation();
+    const [activeSection, setActiveSection] = useState('Home');
 
+    const router = useRouter();
+
+    const toHome = () => {
+        router.push('home');
+    }
+
+    const toDisciplinas = () => {
+        router.push('disciplinas');
+    }
+
+    const toQuestoes = () => {
+        router.push('questoes-interativas');
+    }
+
+    const toSobre = () => {
+        router.push('sobre');
+    }
 
     return (
         <div className="flex justify-around items-center w-[1200px] h-[100px] bg-white">
