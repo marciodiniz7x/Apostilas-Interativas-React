@@ -1,6 +1,6 @@
-import Footer from "@/components/basicos/Footer";
-import Header from "@/components/basicos/Header";
-import Sobre from "@/components/basicos/Sobre";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Sobre from "@/components/Sobre";
 import { useEffect } from "react";
 
 export default function pageSobre() {

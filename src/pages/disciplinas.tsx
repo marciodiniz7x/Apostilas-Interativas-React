@@ -1,6 +1,6 @@
-import Footer from "@/components/basicos/Footer";
-import Header from "@/components/basicos/Header";
-import Disciplinas from "@/components/basicos/Disciplinas";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Disciplinas from "@/components/Disciplinas";
 import { useEffect } from "react";
 
 export default function pageDisciplinas() {

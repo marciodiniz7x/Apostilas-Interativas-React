@@ -49,25 +49,25 @@ export default function Header() {
                     <li>
                         <button 
                         className={`
-                        cursor-pointer hover:text-[#FD5875] duration-300
+                        cursor-pointer duration-300
                         ${activeSection === 'home' ? 'active' : ''}
                         `} onClick={toHome}>Home</button>
                     </li>
 
                     <li>
                         <button className={`
-                        cursor-pointer hover:text-[#FD5875] duration-300 ${activeSection === 'disciplinas' ? 'active' : ''}
+                        cursor-pointer duration-300 ${activeSection === '/disciplinas' ? 'active' : ''}
                         `} onClick={toDisciplinas}>Disciplinas</button>
                     </li>
 
                     <li>
                         <button className={`
-                        cursor-pointer hover:text-[#FD5875] duration-300 ${activeSection === 'questoes-interativas' ? 'active' : ''}
+                        cursor-pointer duration-300 ${activeSection === 'questoes-interativas' ? 'active' : ''}
                         `} onClick={toQuestoes}>Exercícios</button>
                     </li>
 
                     <li>
-                        <button className={`cursor-pointer hover:text-[#FD5875] duration-300 
+                        <button className={`cursor-pointer duration-300 
                         ${activeSection === 'sobre' ? 'active' : ''}`} onClick={toSobre}>Sobre</button>
                     </li>
 
