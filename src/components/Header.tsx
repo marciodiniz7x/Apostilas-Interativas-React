@@ -43,7 +43,7 @@ export default function Header() {
                     </li>
 
                     <li>
-                        <a className="login-btn cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium duration-700" onClick={toLogin}>LOGIN</a>
+                        <button className="btn cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium duration-700" onClick={toLogin}>LOGIN</button>
                     </li>
 
                 </ul>
