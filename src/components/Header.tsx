@@ -1,38 +1,10 @@
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React from "react"
+import { useNavigation } from "./Navigation";
 
 export default function Header() {
 
-    const [activeSection, setActiveSection] = useState('');
-
-    const router = useRouter();
-
-    useEffect(() => {
-        setActiveSection(router.pathname);
-    }, [router.pathname]);
-
-    const toHome = () => {
-        router.push('home');
-    }
-
-    const toDisciplinas = () => {
-        router.push('disciplinas');
-        setActiveSection('disciplinas');
-    }
-
-    const toQuestoes = () => {
-        router.push('questoes-interativas');
-        setActiveSection('questoes-interativas');
-    }
-
-    const toSobre = () => {
-        router.push('sobre');
-        setActiveSection('sobre');
-    }
-
-    const toLogin = () => {
-        router.push('login');
-    }
+    const {activeSection,
+            toHome, toDisciplinas, toLogin, toQuestoes, toSobre} = useNavigation()
 
     return (
         <div className="flex justify-around items-center w-[1200px] h-[100px] bg-white">
@@ -71,7 +43,7 @@ export default function Header() {
                     </li>
 
                     <li>
-                        <button className="login-btn cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium duration-700" onClick={toLogin}>LOGIN</button>
+                        <a className="login-btn cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium duration-700" onClick={toLogin}>LOGIN</a>
                     </li>
 
                 </ul>

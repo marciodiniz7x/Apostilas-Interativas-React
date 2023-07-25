@@ -54,6 +54,7 @@ button {
 button.active {
   font-weight: 500;
   color: #FD5875;
+  transition: none;
 }
 
 button:hover {
