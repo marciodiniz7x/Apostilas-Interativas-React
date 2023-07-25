@@ -54,17 +54,16 @@ button {
 button.active {
   font-weight: 500;
   color: #FD5875;
-  background-color: #fde9e7;
-
-  border-radius: 5px;
 }
 
 button:hover {
   font-weight: 500;
   color: #FD5875;
-  background-color: #fde9e7;
- 
-  border-radius: 5px;
+}
+
+.login-btn:hover {
+  color: white;
+  background-color: #f7aac0;
 }
 
 

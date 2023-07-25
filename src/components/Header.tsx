@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 export default function Header() {
 
-    const [activeSection, setActiveSection] = useState('home');
+    const [activeSection, setActiveSection] = useState('');
 
     const router = useRouter();
 
@@ -13,7 +13,6 @@ export default function Header() {
 
     const toHome = () => {
         router.push('home');
-        setActiveSection('home');
     }
 
     const toDisciplinas = () => {
@@ -50,7 +49,7 @@ export default function Header() {
                         <button 
                         className={`
                         cursor-pointer duration-300
-                        ${activeSection === 'home' ? 'active' : ''}
+                        ${activeSection === '/home' ? 'active' : ''}
                         `} onClick={toHome}>Home</button>
                     </li>
 
@@ -62,17 +61,17 @@ export default function Header() {
 
                     <li>
                         <button className={`
-                        cursor-pointer duration-300 ${activeSection === 'questoes-interativas' ? 'active' : ''}
+                        cursor-pointer duration-300 ${activeSection === '/questoes-interativas' ? 'active' : ''}
                         `} onClick={toQuestoes}>Exercícios</button>
                     </li>
 
                     <li>
                         <button className={`cursor-pointer duration-300 
-                        ${activeSection === 'sobre' ? 'active' : ''}`} onClick={toSobre}>Sobre</button>
+                        ${activeSection === '/sobre' ? 'active' : ''}`} onClick={toSobre}>Sobre</button>
                     </li>
 
                     <li>
-                        <button className="cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium hover:bg-[#f7aac0] duration-700" onClick={toLogin}>LOGIN</button>
+                        <button className="login-btn cursor-pointer bg-[#FD5875] px-7 py-1 rounded-2xl text-white font-medium duration-700" onClick={toLogin}>LOGIN</button>
                     </li>
 
                 </ul>
