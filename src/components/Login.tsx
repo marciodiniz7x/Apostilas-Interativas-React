@@ -7,12 +7,14 @@ export default function Login() {
                 {/* ESQUERDO */}
                 <div className="flex justify-center items-center w-[60%] h-500px rounded-l-xl">
 
-                    <div className="content flex flex-col items-center w-[400px] h-[200px]">
+                    <div className="content flex gap-3 flex-col items-center w-[400px] h-[200px]">
+
                         <span className="text-2xl font-bold">E ai!</span>
                         <span className="px-12" >Entre em sua conta</span>
-                        <input placeholder="Entre" type="text" className="w-[300px] h-[40px] bg-black rounded-3xl shadow-2xl shadow-[#4dcdff]" />
-                        
+                        <input placeholder="Email" type="text" className="w-[300px] h-[40px] rounded-3xl shadow-lg shadow-[#4dcdff] placeholder:text-[#3ac5fc]" />
+
                     </div>
+
                 </div>
 
                 {/* DIREITO */}
