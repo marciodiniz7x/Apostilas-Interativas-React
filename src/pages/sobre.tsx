@@ -7,7 +7,7 @@ export default function pageSobre() {
 
     useEffect(() => {
         document.title = 'Sobre | ReactApostilas'
-    })
+    }, [])
 
     return (
         <div>
